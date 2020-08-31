@@ -77,7 +77,13 @@ public enum StateCode {
         return this.name();
     }
 
-    public static StateCode getStateCode(String value) {
-        return StateCode.valueOf(value);
+    public static StateCode getByName(String name) {
+        if (name == null || name.length() < 1) {
+            return null;
+        }
+        for (StateCode stateName : StateCode.values())
+            if (stateName.toString().equals(name))
+                return stateName;
+        return null;
     }
 }
