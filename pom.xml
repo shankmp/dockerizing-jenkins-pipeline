@@ -43,7 +43,7 @@
 	</dependencies>
 
 	<build>
-	    <finalName>dockerizing-jenkins-pipeline.jar</finalName>
+	    <finalName>dockerizing-jenkins-pipeline</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
